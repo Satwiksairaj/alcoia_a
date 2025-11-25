@@ -62,20 +62,6 @@ n8n_workflow/          Workflow JSON + setup guide
 Create `server/.env` based on `.env` template:
 
 ```
-PORT=5000
-N8N_WEBHOOK_URL=https://your-n8n-instance.com/webhook/mentor-notification
-DATABASE_URL=postgres://username:password@host:5432/alcovia
-PGSSLMODE=require
-# Force the built-in pg-mem fallback while prototyping locally
-USE_IN_MEMORY_DB=true
-# Optional discrete credentials if not using DATABASE_URL
-# DB_HOST=localhost
-# DB_PORT=5432
-# DB_USER=postgres
-# DB_PASSWORD=postgres
-# DB_NAME=alcovia
-CORS_ORIGIN=http://localhost:3000,https://your-deployed-client.com
-```
 
 For Supabase or other managed services, keep `PGSSLMODE=require` to allow SSL.
 
